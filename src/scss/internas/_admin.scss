@@ -1,0 +1,72 @@
+.alerta {
+
+    padding: 1rem;
+    text-align: center;
+    color: $blanco;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    &.error{
+        background-color: $rojo;
+    }
+
+    &.exito{
+        background-color: $verde;
+    }
+}
+
+
+table.propiedades{
+    margin-top: 5rem;
+    width: 100%;
+    border-spacing: 0;
+
+    thead{
+        background-color: $verde;
+
+        th{
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+    .imagen-tabla{
+        width: 20rem; 
+        margin: 0 auto;
+    }
+
+    tbody{
+        tr{
+            td{
+                text-align: center;
+                padding: 2rem; /* Añade un poco de espacio dentro de la celda */
+                border-bottom: 2px solid $grisOscuro; /* Añade un borde inferior de 1 píxel sólido y gris */
+                font-size: 2rem;
+                
+                
+
+                a{
+                    margin-bottom: 2.5rem;
+                    font-size: 1.6rem;
+                }
+
+                img{
+                    border-radius: 1rem;
+                }
+
+                form{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+    }
+}
+
+.imagen-actualizar{
+    max-width: 30rem;
+}
+
+.iniciar-sesion{
+    max-width: 60rem;
+    margin: 0 auto;
+}

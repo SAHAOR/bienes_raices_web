@@ -1,0 +1,111 @@
+.derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+        // align-items: flex-end;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        
+    }
+}
+
+
+.dark-mode-boton{
+    width: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    filter: invert(100%);
+    transition: filter 0.1s ease;
+    
+
+    &:hover{
+        cursor: pointer;
+        filter: hue-rotate(400deg);
+    }
+
+    @include tablet {
+        margin-top: 1rem;
+        width: 3rem;
+        margin-left: 2rem;
+    }
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+}
+
+.navegacion{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility 0.3s ease, opacity 0.2s ease, height 0.3s linear;
+
+    @include tablet {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        align-items: center;
+    }
+
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+        transition: color 0.1s ease;
+
+        @include tablet {
+            margin-right: 2rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 1;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+
+            &:first-of-type{
+                margin-left: 2rem;
+            }
+        }
+
+        @include desktop {
+            font-size: 2rem;
+            margin-right: 3rem;
+        }
+
+        &:hover{
+            color: $amarillo;
+        }
+
+    }
+}
+
+.mobile-menu{
+    @include tablet {
+        display: none;
+    }
+    img{
+        width: 5rem;
+        margin-top: 3rem;
+    }
+}
+
+
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
