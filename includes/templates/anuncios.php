@@ -1,6 +1,5 @@
 <?php
     //importar la bd
-    require 'includes/config/database.php';
     $db =conectarDB();
     //consultar
     $query = "SELECT * FROM propiedades LIMIT $limite";

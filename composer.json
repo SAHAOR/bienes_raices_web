@@ -1,0 +1,17 @@
+{
+    "name": "samirhassan/bienes_raices",
+    "description": "creando un proyecto con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "SAHAOR",
+            "email": "samirhaord@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./classes"
+        }
+    }
+}
