@@ -39,7 +39,7 @@
                         <?php endif; ?>
                         <?php if ($auth) : ?>
                         <a href="/admin">| Panel Admin</a>
-                        <a href="cerrar-sesion.php">Cerrar Sesion</a>
+                        <a href="cerrar-sesion.php">Cerrar Sesion |</a>
                         <?php endif; ?>
                     </nav>
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg" alt="boton modo oscuro">
